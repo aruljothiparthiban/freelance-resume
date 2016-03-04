@@ -233,7 +233,7 @@
 					$(form).ajaxSubmit({
 						type: "POST",
 						data: $(form).serialize(),
-						url: "_layout/php/send.php",
+						url: "",
 						success: function(msg) {
 							
 							if (msg == 'OK') {
