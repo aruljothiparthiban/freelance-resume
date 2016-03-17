@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Quirk Responsive Admin Templates</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/weather-icons/css/weather-icons.css">
+    <link rel="stylesheet" href="../lib/jquery-toggles/toggles-full.css">
+    <link rel="stylesheet" href="../lib/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../css/quirk.css">
+    <script src="../lib/modernizr/modernizr.js"></script>
+</head>
+<body>
+    <section>
+        <div class="contentpanel" style="margin-left:5%;margin-right:5%;">
+            <div class="clear">
+                <img width="100%" src="http://warpspeed.azurewebsites.net/Images/GlobalAccountingLogo.png" />
+            </div>
+            <nav class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"><h3>GAS</h3></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Customer</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            <div class="row demo-navwrapper">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="nav-wrapper white">
+                        <h5 class="sidebar-title">Navigation</h5>
+                        <ul class="nav nav-pills nav-stacked nav-quirk">
+                            <li><a href="#"><i class="fa fa-user"></i> <span>Users</span></a></li>
+                            <li><a href="#"><i class="fa fa-list"></i> <span>Customer Groups</span></a></li>
+                            <li><a href="#"><i class="fa fa-th"></i> <span>Customers</span></a></li>
+                            <li class="nav-parent active">
+                                <a href="#"><i class="fa fa-gear"></i> <span>Systems</span></a>
+                                <ul class="children">
+                                    <li><a href="#">GST How to Remind Items</a></li>
+                                    <li><a href="#">Office Items</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">System Messages</a></li>
+                                    <li><a href="#">User Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-9 col-lg-2">
+                    <form id="basicForm" action="" class="form-horizontal" novalidate="novalidate">
+                        <div class="panel">
+                            <div class="panel-heading nopaddingbottom">
+                                <h4 class="panel-title">
+                                    New Customer
+                                    <a href="customer.html" class="btn btn-default btn-quirk btn-sm pull-right mb5">Go Back</a>
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Customer Group <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="0">No Group</option>
+                                                    <option value="1">test</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Customer Code <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <input type="email" name="text" class="form-control" placeholder="AUG001ABC" required="" aria-required="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Customer Name</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Customer Type <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="Individual">Individual</option>
+                                                    <option value="Company">Company</option>
+                                                    <option value="Trust">Trust</option>
+                                                    <option value="Partnership">Partnership</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Business No</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Business Type <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="Individual">Business Type 1</option>
+                                                    <option value="Company">Business Type 2</option>
+                                                    <option value="Trust">Business Type 3</option>
+                                                    <option value="Partnership">Business Type 4</option>
+                                                    <option value="Partnership">Business Type 5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Tax No</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Referred By</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Period <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="Individual">- Select -</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Basis <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="Individual">- Select -</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                How to Remind <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="Individual">- Select -</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Notes <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <textarea rows="5" class="form-control" placeholder="Type your notes..." required="" aria-required="true"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Client Manager</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Accountant - Income Tax</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Accountant - GST</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Office <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <select class="form-control" id="GroupID" name="GroupID">
+                                                    <option value="Individual">- Select -</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Contact Number
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="text" class="form-control" placeholder="000 000 0000" required="" aria-required="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">
+                                                Mobile Number
+                                            </label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="text" class="form-control" required="" aria-required="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Email <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <input type="email" name="text" class="form-control" required="" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Website <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <input type="email" name="text" class="form-control" placeholder="http://www.example.com" required="" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Trade As <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <input type="email" name="text" class="form-control" required="" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Previous Name <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <input type="email" name="text" class="form-control" required="" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label nopaddingtop"></label>
+                                            <div class="col-sm-7">
+                                                <label class="ckbox">
+                                                    <input id="int[]" type="checkbox" name="int[]" required="" aria-required="true">
+                                                    <span>Tax Client</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>Estate</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label nopaddingtop"></label>
+                                            <div class="col-sm-7">
+                                                <label class="ckbox">
+                                                    <input id="int[]" type="checkbox" name="int[]" required="" aria-required="true">
+                                                    <span>None</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>Red Dot</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>Blue Dot</span>
+                                                </label>
+                                                <label class="error" for="int[]"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label nopaddingtop"></label>
+                                            <div class="col-sm-7">
+                                                <label class="ckbox">
+                                                    <input id="int[]" type="checkbox" name="int[]" required="" aria-required="true">
+                                                    <span>GST Registered</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>GST Ceased</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>GST done by us</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>Paye</span>
+                                                </label>
+                                                <label class="ckbox">
+                                                    <input type="checkbox" name="int[]">
+                                                    <span>Paye done by us</span>
+                                                </label>
+                                                <label class="error" for="int[]"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label nopaddingtop">Customer Status <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <label class="rdiobox">
+                                                    <input id="platform" type="radio" name="platform" value="mac" required="" aria-required="true">
+                                                    <span>Active</span>
+                                                </label>
+                                                <label class="rdiobox">
+                                                    <input type="radio" name="platform" value="win">
+                                                    <span>Pre-Payment</span>
+                                                </label>
+                                                <label class="rdiobox">
+                                                    <input type="radio" name="platform" value="win">
+                                                    <span>On Hold</span>
+                                                </label>
+                                                <label class="rdiobox">
+                                                    <input type="radio" name="platform" value="win">
+                                                    <span>Monthly</span>
+                                                </label>
+                                                <label class="rdiobox">
+                                                    <input type="radio" name="platform" value="win">
+                                                    <span>Closed</span>
+                                                </label>
+                                                <label class="error" for="platform"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Notes <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <textarea rows="10" class="form-control" placeholder="Summer note will be replayed here ..." required="" aria-required="true"></textarea>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading nopaddingbottom">
+                                <h4 class="panel-title">
+                                    Banking
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Account No <span class="text-danger">*</span></label>
+                                            <div class="col-sm-7">
+                                                <input type="email" name="text" class="form-control" required="" aria-required="true">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Account Type</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label">Bank Name</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" name="url" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-5 control-label nopaddingtop"></label>
+                                            <div class="col-sm-7">
+                                                <label class="ckbox">
+                                                    <input id="int[]" type="checkbox" name="int[]" required="" aria-required="true">
+                                                    <span>Use as refund account</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading nopaddingbottom">
+                                <h4 class="panel-title">
+                                    Directors
+                                    <button class="btn btn-default btn-quirk btn-sm pull-right mb5">Add</button>
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading nopaddingbottom">
+                                <h4 class="panel-title">
+                                    Shareholders
+                                    <button class="btn btn-default btn-quirk btn-sm pull-right mb5">Add</button>
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading nopaddingbottom">
+                                <h4 class="panel-title">
+                                    Trustees
+                                    <button class="btn btn-default btn-quirk btn-sm pull-right mb5">Add</button>
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading nopaddingbottom">
+                                <h4 class="panel-title">
+                                    Additional Contacts
+                                    <button class="btn btn-default btn-quirk btn-sm pull-right mb5">Add</button>
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- row -->
+
+        </div>
+    </section>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/jquery-ui/jquery-ui.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/jquery-toggles/toggles.js"></script>
+    <script src="../js/quirk.js"></script>
+    <script>
+        $(function () {
+            $('#datepicker-inline').datepicker();
+        });
+    </script>
+</body>
+</html>

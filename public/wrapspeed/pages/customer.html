@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Quirk Responsive Admin Templates</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/weather-icons/css/weather-icons.css">
+    <link rel="stylesheet" href="../lib/jquery-toggles/toggles-full.css">
+    <link rel="stylesheet" href="../lib/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../css/quirk.css">
+    <script src="../lib/modernizr/modernizr.js"></script>
+</head>
+<body>
+    <section>
+        <div class="contentpanel" style="margin-left:5%;margin-right:5%;">
+            <div class="clear">
+                <img width="100%" src="http://warpspeed.azurewebsites.net/Images/GlobalAccountingLogo.png" />
+            </div>
+            <nav class="navbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"><h3>GAS</h3></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Customer</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            <div class="row demo-navwrapper">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="nav-wrapper white">
+                        <h5 class="sidebar-title">Navigation</h5>
+                        <ul class="nav nav-pills nav-stacked nav-quirk">
+                            <li><a href="#"><i class="fa fa-user"></i> <span>Users</span></a></li>
+                            <li><a href="#"><i class="fa fa-list"></i> <span>Customer Groups</span></a></li>
+                            <li><a href="#"><i class="fa fa-th"></i> <span>Customers</span></a></li>
+                            <li class="nav-parent active">
+                                <a href="#"><i class="fa fa-gear"></i> <span>Systems</span></a>
+                                <ul class="children">
+                                    <li><a href="#">GST How to Remind Items</a></li>
+                                    <li><a href="#">Office Items</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">System Messages</a></li>
+                                    <li><a href="#">User Messages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-9 col-lg-2">
+                    <div class="panel">
+                        <div class="panel-heading nopaddingbottom">
+                            <h4 class="panel-title">
+                                Customers
+                                <a href="add-customer.html" class="btn btn-success btn-quirk btn-sm pull-right mb5">Add Customer</a>
+                            </h4>
+
+                        </div>
+                        <div class="panel-body">
+                            <hr>
+                            <div class="table-responsive">
+                                <table class="table table-bordered nomargin" style="width:200%;max-width:200%;">
+                                    <colgroup>
+                                        <col width="90px"/>
+                                        <col width="200px" />
+                                        <col width="100px" />
+                                        <col width="100px" />
+                                        <col width="100px" />
+                                        <col width="100px" />
+                                        <col width="150px" />
+                                        <col width="200px" />
+                                        <col width="100px" />
+                                        <col width="100px" />
+                                    </colgroup>
+                                    <thead style="background-color: #c8e5bc;">
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Entity</th>
+                                            <th>Tax no</th>
+                                            <th>Type</th>
+                                            <th>Contact no</th>
+                                            <th>Email</th>
+                                            <th>Client Manager</th>
+                                            <th>Accountant Income Tax</th>
+                                            <th>Accountant GST</th>
+                                            <th>
+                                                <div style="text-align: center;">Remove</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="Terminated" style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/1'">
+                                            <td style="color: red; text-decoration: line-through;">TES001</td>
+                                            <td style="color: red; text-decoration: line-through;">Test Ltd</td>
+                                            <td style="color: red; text-decoration: line-through;">123-321-000</td>
+                                            <td style="color: red; text-decoration: line-through;">Company</td>
+                                            <td style="color: red; text-decoration: line-through;">021 123 321</td>
+                                            <td style="color: red; text-decoration: line-through;">test@test.com</td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="text-align: center;">&nbsp;</td>
+                                        </tr>
+                                        <tr class="Terminated" style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/2'">
+                                            <td style="color: red; text-decoration: line-through;">Tod1234</td>
+                                            <td style="color: red; text-decoration: line-through;">Touch of Death1</td>
+                                            <td style="color: red; text-decoration: line-through;">12345699</td>
+                                            <td style="color: red; text-decoration: line-through;">Individual</td>
+                                            <td style="color: red; text-decoration: line-through;">09336999</td>
+                                            <td style="color: red; text-decoration: line-through;">tod@tod.co.nz</td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="text-align: center;">&nbsp;</td>
+                                        </tr>
+                                        <tr class="Terminated" style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/3'">
+                                            <td style="color: red; text-decoration: line-through;">tod12345</td>
+                                            <td style="color: red; text-decoration: line-through;">Touch of Death2</td>
+                                            <td style="color: red; text-decoration: line-through;">123456789</td>
+                                            <td style="color: red; text-decoration: line-through;">Company</td>
+                                            <td style="color: red; text-decoration: line-through;">09665447</td>
+                                            <td style="color: red; text-decoration: line-through;">tod@tod.co.nz</td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="color: red; text-decoration: line-through;"></td>
+                                            <td style="text-align: center;">&nbsp;</td>
+                                        </tr>
+                                        <tr style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/4'">
+                                            <td style="color: grey; text-decoration: line-through;">testers45</td>
+                                            <td style="color: grey; text-decoration: line-through;">testers45</td>
+                                            <td style="color: grey; text-decoration: line-through;">951654357</td>
+                                            <td style="color: grey; text-decoration: line-through;">Individual</td>
+                                            <td style="color: grey; text-decoration: line-through;">1234567895</td>
+                                            <td style="color: grey; text-decoration: line-through;">testers45@testers45.com</td>
+                                            <td style="color: grey; text-decoration: line-through;">12312312</td>
+                                            <td style="color: grey; text-decoration: line-through;">22222222222</td>
+                                            <td style="color: grey; text-decoration: line-through;">3332123123123</td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover4" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'">tester46</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'">tester46</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'">357682419</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'">Individual</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'">3216549875</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'"><a href="mailto:test@test.com">test@test.com</a></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'"></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'"></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/5'"></td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover5" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">CAT04A</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">Catalyst Web Design Limited</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">116121143</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">Company</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">027 439 7027</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'"><a href="mailto:chris@catalystwebdesign.co.nz">chris@catalystwebdesign.co.nz</a></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">Roopa Patel</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">Hala Hamid</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/6'">Hala Hamid</td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover6" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'">CAT04B</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'">Redshaw, Christopher Colin</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'">038960121</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'">Individual</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'">027 439 7027</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'"><a href="mailto:chris@catalystwebdesign.co.nz">chris@catalystwebdesign.co.nz</a></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'"></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'"></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/7'"></td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover7" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">release2</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">release2</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">917382465</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">Company</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">1234567895</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'"><a href="mailto:release2@release2.com">release2@release2.com</a></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">joe</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">sam</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/8'">john</td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover8" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/12'">
+                                            <td style="color: grey; text-decoration: line-through;">AUG0017</td>
+                                            <td style="color: grey; text-decoration: line-through;">Aruljothi Parthiban</td>
+                                            <td style="color: grey; text-decoration: line-through;"></td>
+                                            <td style="color: grey; text-decoration: line-through;">Individual</td>
+                                            <td style="color: grey; text-decoration: line-through;">8189981738</td>
+                                            <td style="color: grey; text-decoration: line-through;">pkaruljothi@gmail.com</td>
+                                            <td style="color: grey; text-decoration: line-through;">Swethaa Parthiban</td>
+                                            <td style="color: grey; text-decoration: line-through;"></td>
+                                            <td style="color: grey; text-decoration: line-through;"></td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover12" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">ESS02A</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">Essential Plumbing &amp; Gas Limited</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">106 081 182</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">Company</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'"></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'"><a href="mailto:essential.plumb@gmail.com">essential.plumb@gmail.com</a></td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">Roopa Patel</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">Mariska Malan</td>
+                                            <td style="cursor: pointer;" onclick="location.href = '/Admin/Customer/ViewCustomer/13'">Mariska Malan</td>
+                                            <td style="text-align: center;">
+                                                <div id="myPopover13" class="fa fa-trash" role="button" data-toggle="confirmation" data-placement="right" data-singleton="true" data-btn-ok-class="btn-danger btn-xs" data-btn-cancel-class="btn-success btn-xs" data-original-title="" title=""></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- panel-body -->
+                    </div>
+                </div>
+            </div><!-- row -->
+
+        </div>
+    </section>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/jquery-ui/jquery-ui.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/jquery-toggles/toggles.js"></script>
+    <script src="../js/quirk.js"></script>
+    <script>
+        $(function () {
+            $('#datepicker-inline').datepicker();
+        });
+    </script>
+</body>
+</html>
